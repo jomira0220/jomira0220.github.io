@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.5" />
+    <title>Jomira Portfolio</title>
+    <link rel="stylesheet" href="./asset/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+  </head>
+
+  <body>
+    <div id="loader">
+      <div id="title">
+        <h1>
+          <div id="typing"></div>
+          <div class="dash"></div>
+        </h1>
+      </div>
+    </div>
+
+    <progress max="100" value="0"></progress>
+    <div class="cursor"><span>scroll</span></div>
+    <header>
+      <div class="inner">
+        <h1><a href="#">JOMIRA</a></h1>
+        <nav>
+          <label for="active" class="nav_btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Layer_1"
+              x="0px"
+              y="0px"
+              width="100%"
+              height="auto"
+              viewBox="0 0 122.879 103.609"
+              enable-background="new 0 0 122.879 103.609"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.368,0h102.144c5.703,0,10.367,4.665,10.367,10.367v0 c0,5.702-4.664,10.368-10.367,10.368H10.368C4.666,20.735,0,16.07,0,10.368v0C0,4.665,4.666,0,10.368,0L10.368,0z M10.368,82.875 h102.144c5.703,0,10.367,4.665,10.367,10.367l0,0c0,5.702-4.664,10.367-10.367,10.367H10.368C4.666,103.609,0,98.944,0,93.242l0,0 C0,87.54,4.666,82.875,10.368,82.875L10.368,82.875z M10.368,41.438h102.144c5.703,0,10.367,4.665,10.367,10.367l0,0 c0,5.702-4.664,10.368-10.367,10.368H10.368C4.666,62.173,0,57.507,0,51.805l0,0C0,46.103,4.666,41.438,10.368,41.438 L10.368,41.438z"
+                />
+              </g>
+            </svg>
+          </label>
+          <input type="checkbox" id="active" />
+          <div class="menu">
+            <ul>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#me">Me</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="main_visual">
+        <div class="video_box">
+          <video muted autoplay loop>
+            <source src="./asset/videos/main_bg.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="title_box">
+          <div class="title_inner">
+            <h2 class="title">
+              <span>Constantly</span><br />
+              <span class="ft_st">Evolving</span><br />
+              <span>Developer</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="inner">
+          <div class="line_box"><div class="line"></div></div>
+          <p class="sub_title">
+            좋아하는 일을 위해 정체돼있지 않고
+            <br />더 발전하기 위해 항상 노력하고자 합니다.
+          </p>
+        </div>
+      </section>
+
+      <div id="wrap_bg">
+        <div class="marquee_box_1">
+          <span>True life is lived when tiny change occur.</span>
+          <span>Lev Tolstoy</span>
+        </div>
+        <div class="marquee_box_2">
+          <span>작은 변화가 일어날 때 진정한 삶을 살게된다.</span
+          ><span>작은 변화가 일어날 때 진정한 삶을 살게된다.</span
+          ><span>작은 변화가 일어날 때 진정한 삶을 살게된다.</span
+          ><span>작은 변화가 일어날 때 진정한 삶을 살게된다.</span
+          ><span>작은 변화가 일어날 때 진정한 삶을 살게된다.</span
+          ><span>작은 변화가 일어날 때 진정한 삶을 살게된다.</span
+          ><span>작은 변화가 일어날 때 진정한 삶을 살게된다.</span
+          ><span>작은 변화가 일어날 때 진정한 삶을 살게된다.</span
+          ><span>작은 변화가 일어날 때 진정한 삶을 살게된다.</span>
+        </div>
+
+        <section id="work">
+          <div class="inner grid_group">
+            <div class="work_title">
+              <h3>My Work</h3>
+              <p class="sub_txt">
+                사용자 경험을 최적화하기 위해<br />
+                반응형 및 모바일 친화적인 웹을 개발하고<br />
+                <br />
+                웹 표준 및 접근성 고려한 마크업으로 모든 사용자가<br />
+                웹 콘텐츠에 쉽게 접근할 수 있도록 합니다.<br />
+                <br />
+                최신 기술과 도구를 활용하여<br />
+                인터렉티브한 형태의 웹을 추구하며<br />
+                웹의 성능과 로딩 속도를 향상시키는데<br />
+                주력합니다.<br />
+                <br />
+                검색 엔진 최적화(SEO)를 고려하여<br />
+                웹 사이트의 가시성을 향상시킵니다.
+              </p>
+              <div class="view_more" style="display: none">
+                <span>View Work List +</span>
+                <ul class="more_list">
+                  <li><a href="#">ex1</a></li>
+                  <li><a href="#">ex1</a></li>
+                  <li><a href="#">ex1</a></li>
+                  <li><a href="#">ex1</a></li>
+                  <li><a href="#">ex1</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="work_list_1">
+              <li>
+                <a
+                  href="https://github.com/jomira0220/study/tree/main/jomira/megaCoffee"
+                  target="_blank"
+                  ><img src="./asset/img/p_1.jpg" alt=""
+                /></a>
+                <figure class="work_info">
+                  <span class="desc"
+                    >#Scss #Javascript #HTML #Json #Mobile</span
+                  >
+                  <div class="title_group">
+                    <strong class="title">Mega Coffee</strong>
+                    <a href="#">CODE REVIEW</a>
+                  </div>
+                </figure>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jomira0220/study/tree/main/jomira/portfolio-master/%ED%81%B4%EB%9E%98%EC%8A%A4shop"
+                  target="_blank"
+                  alt=""
+                >
+                  <img src="./asset/img/p_2.jpg" alt="" />
+                </a>
+                <figure class="work_info">
+                  <span class="desc">#Node #Javascript #HTHL #CSS #Mysql</span>
+                  <div class="title_group">
+                    <strong class="title">IT BOOK</strong>
+                    <a href="#">CODE REVIEW</a>
+                  </div>
+                </figure>
+              </li>
+            </ul>
+
+            <ul class="work_list_2">
+              <li>
+                <a href="https://slim9.co.kr/" target="_blank"
+                  ><img src="./asset/img/p_8.jpg" alt=""
+                /></a>
+                <figure class="work_info">
+                  <span class="desc">#HTML #CSS #Javascript #Jquery</span>
+                  <div class="title_group">
+                    <strong class="title">Slim9</strong>
+                    <a href="#">CODE REVIEW</a>
+                  </div>
+                </figure>
+              </li>
+
+              <li>
+                <a href="http://www.cnccompany.net/" target="_blank"
+                  ><img src="./asset/img/p_3.jpg" alt=""
+                /></a>
+                <figure class="work_info">
+                  <span class="desc"
+                    >#HTML #Php #Javascript #CSS #Gnuboard</span
+                  >
+                  <div class="title_group">
+                    <strong class="title">cnccompany</strong>
+                    <a href="#">CODE REVIEW</a>
+                  </div>
+                </figure>
+              </li>
+              <li>
+                <a href="./page/javascriptList.html" target="_blank"
+                  ><img src="./asset/img/p_5.jpg" alt=""
+                /></a>
+                <figure class="work_info">
+                  <span class="desc"
+                    >#Scss #Javascript #HTML #Scss #TypeScript #Algorism</span
+                  >
+                  <div class="title_group">
+                    <strong class="title">Javascript</strong>
+                    <a href="#">CODE REVIEW</a>
+                  </div>
+                </figure>
+              </li>
+            </ul>
+
+            <ul class="work_list_3">
+              <!-- li>
+                            <a href="#" target="_blank"><img src="./asset/img/p_1.jpg" alt=""></a>
+                            <figure class="work_info">
+                                <span class="desc">#React #Javascript #Html #css #MongoDB</span>
+                                <div class="title_group">
+                                    <strong class="title">Movie web</strong>
+                                    <a href="#">CODE REVIEW</a>
+                                </div>
+                            </figure>
+                        </li -->
+              <li>
+                <a href="https://balance9.net/" target="_blank"
+                  ><img src="./asset/img/p_6.jpg" alt=""
+                /></a>
+                <figure class="work_info">
+                  <span class="desc">#HTML #CSS #Javascript #Jquery</span>
+                  <div class="title_group">
+                    <strong class="title">balance9</strong>
+                    <a href="#">CODE REVIEW</a>
+                  </div>
+                </figure>
+              </li>
+              <li>
+                <a href="http://yangjaeforest.com/" target="_blank"
+                  ><img src="./asset/img/p_7.jpg" alt=""
+                /></a>
+                <figure class="work_info">
+                  <span class="desc">#HTML #CSS #Javascript #Jquery</span>
+                  <div class="title_group">
+                    <strong class="title">양재숲병원</strong>
+                    <a href="#">CODE REVIEW</a>
+                  </div>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="me">
+          <div class="my_strengths">
+            <div class="title">
+              <h3>My Strengths</h3>
+              <p>
+                트렌드에 발 맞추어 스스로 역량을 키워나가고,<br />
+                유연한 태도로 커뮤니케이션을 통해 팀원들과 소통하는<br />
+                사람이 되고자 합니다.
+              </p>
+            </div>
+            <img
+              class="neptune"
+              data-y="50"
+              data-x="-30"
+              data-r="-180"
+              src="./asset/img/neptune.png"
+              alt=""
+            />
+            <img
+              class="moon"
+              data-y="70"
+              data-x="10"
+              data-r="180"
+              src="./asset/img/moon.png"
+              alt=""
+            />
+            <img
+              class="mars"
+              data-y="70"
+              data-x="50"
+              data-r="-180"
+              src="./asset/img/mars.png"
+              alt=""
+            />
+            <img class="earth" src="./asset/img/earth.png" alt="" />
+          </div>
+          <div class="my_skill">
+            <div class="inner">
+              <div class="title">
+                <h3>Skills</h3>
+                <div class="line"></div>
+                <p>
+                  트렌드에 맞추어 다양한 프레임워크 및 기술 정보, 알고리즘
+                  공부를<br />
+                  꾸준히 이어나가 스스로 역량을 키워나가는 사람이 되고자 합니다.
+                </p>
+              </div>
+              <ul class="skill_list">
+                <li class="word"><span class="slide_up">HTML</span></li>
+                <li><span class="slide_up">CSS</span></li>
+                <li><span class="slide_left">Javascript</span></li>
+                <li><span class="slide_left">Jquery</span></li>
+                <li><span class="slide_down">React</span></li>
+                <li><span class="slide_right">Next</span></li>
+                <li><span class="slide_up">Scss</span></li>
+                <li><span class="slide_down">Bootstap</span></li>
+                <li><span class="slide_down">TailWinds</span></li>
+                <li><span class="slide_left">Node</span></li>
+                <li><span class="slide_right">Express</span></li>
+                <li><span class="slide_up">Mysql</span></li>
+                <li><span class="slide_down">Git</span></li>
+                <li><span class="slide_left">GitHub</span></li>
+                <li><span class="slide_right">Python</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="footer_info">
+        <div class="inner">
+          <div class="footer_social">
+            <a
+              class="social-button_button"
+              href="https://www.instagram.com/whalfk220"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 15 15" fill="none" xmlns="">
+                <path
+                  d="M3.8 14.4h-3V4.8h3v9.6Zm-1.5-11c-1 0-1.7-.6-1.7-1.6S1.4 0 2.3 0C3.3 0 4 .8 4 1.8s-.7 1.7-1.7 1.7Zm12.6 11h-3V9.2c0-1.5-.7-2-1.5-2-1 0-1.8.8-1.8 2.1v5.1h-3V4.8h2.8v1.4c.3-.7 1.3-1.6 2.8-1.6 1.8 0 3.5 1 3.5 3.9v6h.2Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="social-button_button"
+              href="https://www.facebook.com/whalfk220"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M324.6,0c-72.1,0-114.4,38.1-114.4,124.8v76.3h-91.4v91.4h91.4V512h91.4V292.6h73.1l18.3-91.4h-91.4v-60.9
+                   c0-32.7,10.7-48.9,41.3-48.9h30.1V3.8C384.5,2.6,359.2,0,324.6,0z"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a
+              class="social-button_button"
+              href="https://github.com/jomira0220"
+            >
+              <svg
+                width="100px"
+                height="100px"
+                viewBox="0 0 48 48"
+                version="1.1"
+                id="Shopicons"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0"
+                y="0"
+                xml:space="preserve"
+              >
+                <g
+                  id="github_00000178918564504449926280000008731996709616696990_"
+                >
+                  <path d="M0 .011h48v48H0v-48z" fill="none" />
+                  <path
+                    d="M30 44.004v-10c0-.884-.197-1.722-.542-2.479.825-.167 1.65-.358 2.472-.601 2.527-.746 6.154-3.839 7.226-6.863 1.188-3.356 1.188-6.76 0-10.116l-.001-.001c-.213-.603-.537-1.211-.998-1.868.848-3.154.253-5.792.225-5.915l-.365-1.564-1.606.019c-.15.002-3.48.063-6.724 1.955a29.635 29.635 0 0 0-11.371 0c-3.243-1.892-6.573-1.953-6.724-1.955l-1.608-.019-.365 1.564c-.028.123-.623 2.761.225 5.915-.461.657-.785 1.266-.999 1.869-1.187 3.356-1.187 6.76.001 10.117 1.07 3.023 4.697 6.116 7.225 6.862.822.243 1.647.434 2.472.601A5.946 5.946 0 0 0 18 34.004v1.281c-.062.036-.127.065-.187.108-.289.211-2.869 1.967-5.505.09-.93-.946-1.386-1.639-1.826-2.309-.988-1.5-1.841-2.586-4.588-3.96a2 2 0 1 0-1.789 3.579c1.991.995 2.341 1.525 3.035 2.581.515.781 1.155 1.754 2.445 3.044l.215.186c1.692 1.27 3.447 1.723 5.053 1.723A9.286 9.286 0 0 0 18 39.76v4.253l12-.009z"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a
+              class="social-button_button"
+              href="https://whalfk220.tistory.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 408.4 408.4"
+              >
+                <g>
+                  <circle class="cls-1" cx="58.18" cy="58.18" r="58.18" />
+                  <circle class="cls-1" cx="204.2" cy="58.18" r="58.18" />
+                  <circle class="cls-1" cx="204.2" cy="204.2" r="58.18" />
+                  <circle class="cls-1" cx="204.2" cy="350.22" r="58.18" />
+                  <circle class="cls-1" cx="350.22" cy="58.18" r="58.18" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="footer_contact">
+            <ul>
+              <li>
+                <a href="mailto:whalfk220@gmail.com" class="footer_mail"
+                  >whalfk220@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:010-8856-6146" class="footer_call"
+                  >010-8856-6146</a
+                >
+              </li>
+            </ul>
+            <p class="footer_date">©2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="./asset/js/ani.js"></script>
+    <script src="./asset/js/dist/index.js"></script>
+  </body>
+</html>

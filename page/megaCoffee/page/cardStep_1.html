@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>알림</title>
+  <link rel="stylesheet" href="./../css/reset.css">
+  <link rel="stylesheet" href="./../css/commen.css">
+  <link rel="stylesheet" href="./../css/all.css">
+</head>
+
+<body>
+
+  <article id="cardStep_1">
+
+    <header>
+      <div class="backBtn"><span class="hidden">뒤로돌아가기</span><i class="icon-left_arrow"></i></div>
+      <h2>간편카드 등록</h2>
+      <ul class="mainGnb">
+      </ul>
+    </header>
+
+    <form action="">
+      <div id="cardName" class="shadowBox">
+        <h5>카드이름</h5>
+        <label>
+          <input type="text" placeholder="나의간편카드">
+          <div class="countBox"><span class="textCount">0</span>/<span class="max">20</span></div>
+        </label>
+        <div>카드이름은 간편카드 페이지에서 변경하실 수 있습니다.</div>
+      </div>
+
+      <div id="cardNumber" class="shadowBox">
+        <h5>카드번호</h5>
+        <div class="inputWarp">
+          <input type="number">
+          <input type="number">
+          <input type="number">
+          <input type="number">
+        </div>
+      </div>
+
+      <div id="cardDate" class="shadowBox">
+        <h5>카드 유효기간</h5>
+        <input type="number" placeholder="MM"> / <input type="number" placeholder="YY">
+      </div>
+
+      <div id="cardPassword" class="shadowBox">
+        <h5>카드 비밀번호(앞 2자리)</h5>
+        <input type="number">
+        <input type="number">
+        <span>*</span>
+        <span>*</span>
+      </div>
+
+      <div id="Card_Classification" class="shadowBox">
+        <h5>고객 구분</h5>
+        <label id="classification_1"><input type="radio" name="classification" checked> 개인카드</label>
+        <label id="classification_2"><input type="radio" name="classification"> 법인카드</label>
+        <input type="text" placeholder="생년월일 6자리 (YYMMDD)">
+        <button id="cardRegistration" type="submit">결제비밀번호 등록</button>
+      </div>
+
+    </form>
+
+
+
+  </article>
+
+  <script src="../js/main.js" type="module"></script>
+</body>
+
+</html>

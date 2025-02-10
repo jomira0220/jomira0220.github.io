@@ -1,0 +1,238 @@
+@import url("https://webfontworld.github.io/score/SCoreDream.css");
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SCoreDream", sans-serif;
+  color: #202020;
+  -webkit-user-drag: none;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  font-size: 1em;
+}
+
+input {
+  border: none;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+  font-family: "SCoreDream", sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-moz-selection {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+::selection {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #202020;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  color: #fff;
+  padding: 2% 0px;
+}
+#header h1 {
+  flex: 1;
+  font-weight: bold;
+}
+#header h1 img {
+  width: 180px;
+}
+#header > div {
+  flex: 1;
+}
+#header #controlBox {
+  display: flex;
+  font-size: 1.8em;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#header #controlBox #year {
+  margin-right: 5px;
+}
+#header #controlBox #year input {
+  width: 140px;
+}
+#header #controlBox input {
+  font-size: 1.8em;
+  font-weight: bold;
+  width: 65px;
+  background: none;
+  color: #fff;
+  text-align: right;
+}
+#header #controlBox #monthControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header #buttonWarp {
+  width: 160px;
+}
+#header #buttonWarp button {
+  width: 40px;
+  height: 40px;
+  font-size: 0.8em;
+  background-color: #fff;
+  border: none;
+  border-radius: 100%;
+  line-height: 40px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+#header #buttonWarp button.minusBtn {
+  line-height: 43px;
+}
+
+#calendarBox {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/*
+div[id$="Section"] {
+    position: absolute;
+}
+*/
+#dayWarp {
+  position: relative;
+  overflow: hidden;
+}
+
+#daySection {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+  background-color: #fff;
+}
+#daySection #columnHeaderWarp {
+  grid-gap: 5px;
+  grid-column: 1/8;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+#daySection #columnHeaderWarp div:first-child {
+  background-color: #f4608a;
+}
+#daySection #columnHeaderWarp div:last-child {
+  background-color: #49b2d6;
+}
+#daySection #columnHeaderWarp div {
+  width: 14.285%;
+  background: #474545;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+#daySection .day {
+  color: #202020;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  padding: 15px 0;
+  min-height: 90px;
+}
+#daySection .noDay {
+  background-color: #eff4f7;
+  border: none;
+}
+#daySection .cut {
+  display: none !important;
+}
+#daySection div.toDay div.dayNum {
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background: #f4608a;
+  line-height: 40px;
+  border-radius: 100%;
+  color: #fff;
+}
+#daySection .saturDay {
+  color: #49b2d6;
+}
+#daySection .sunDay {
+  color: #f4608a;
+}
+#daySection .holiDay, #daySection .bridgeHoliDay {
+  color: #000;
+  background: #fffddd;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+#daySection .dayNum.on {
+  color: #f4608a;
+}
+
+#nowWarp {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 0.7em;
+  }
+  #header {
+    border-radius: 0;
+    flex-direction: column;
+    padding: 8% 0 13%;
+  }
+  #header h1 img {
+    width: 60%;
+  }
+  #header #controlBox #buttonWarp {
+    width: 100%;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  #header #controlBox #year {
+    margin-right: 0px;
+  }
+  #header #controlBox #year input {
+    width: 95px;
+  }
+  #header #controlBox input {
+    width: 45px;
+  }
+  #calendarBox {
+    margin: 0 0 15px;
+    width: 100%;
+  }
+  #calendarBox #daySection {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  #calendarBox #daySection .holiDay, #calendarBox #daySection .bridgeHoliDay {
+    padding: 0;
+  }
+  #nowWarp {
+    font-size: 1.4em;
+  }
+}/*# sourceMappingURL=index.css.map */

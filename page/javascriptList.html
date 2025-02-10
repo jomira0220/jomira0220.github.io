@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 활용 작업 리스트</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color:#000;
+            display: block;
+        }
+        
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'yg-jalnan';
+            background-color: #484848;
+            color:#000;
+            font-size: 1.5em;
+        }
+        
+        .warp{
+            width: 70%;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .warp h3 {
+            font-size:1.8em;
+            color:#ae00ff;
+        }
+        .warp ul li {
+            width: 45%;
+            display: inline-block;
+            background-color: #fff;
+            border-radius: 40px;
+            margin:1%;
+            padding: 5% 0;
+            box-shadow: 7px 7px 10px 5px #000;
+        }
+        .warp ul li:hover {
+            box-shadow: none;
+        }
+        
+        @media screen and (max-width:600px) {
+            body {
+                font-size: 0.9em;
+            }
+            .warp {
+                width: 90%;
+                padding: 10% 0;
+                height: auto;
+            }
+            .warp ul li {
+                width: 100%;
+                margin-bottom:10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <ul>
+            <li>
+                <a href="./1to50/1to50.html">
+                    <img src="./img/icons1.png" alt="">
+                    <img src="./img/icons50.png" alt="">
+                    <h3>1 to 50</h3>
+                    <p>1부터 시작하여 50까지<br> 빠른 시간안에 클릭하는 게임</p>
+                </a>
+            </li>
+            <li><a href="./calendar/index.html">
+                    <img src="./img/calendar.png" alt="">
+                    <h3>Calendar</h3>
+                    <p>input 형태로 년,월 수정이 가능하며<br> 공휴일을 표시한 달력</p>
+                </a></li>
+            <li><a href="./tictacto/index.html">
+                    <img src="./img/ttt.png" alt="">
+                    <h3>Tic Tac To</h3>
+                    <p>3*3 박스안에 먼저 한줄을<br> 완성하는 사람이 승리하는 게임</p>
+                </a></li>
+            <li><a href="./foodTicketMachine/index.html">
+                <img src="./img/vending.png" alt="">
+                    <h3>Food Ticket Machine</h3>
+                    <p>
+                        어드민과 사용자로 나눠 식권 & 돈 충전 및 <br>
+                        구매가 가능한 가상 식권자판기
+                        
+                    </p>
+                </a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

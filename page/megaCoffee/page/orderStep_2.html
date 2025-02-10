@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주문 - 옵션 선택</title>
+  <link rel="stylesheet" href="./../css/reset.css">
+  <link rel="stylesheet" href="./../css/commen.css">
+  <link rel="stylesheet" href="./../css/all.css">
+</head>
+
+<body>
+
+  <article id="order" class="orderStep_2">
+
+    <header>
+      <div class="backBtn"><span class="hidden">뒤로돌아가기</span><i class="icon-left_arrow"></i></div>
+      <h2>주문 - 옵션 선택</h2>
+      <ul class="mainGnb">
+        <li class="cartBtn">
+          <a href="../page/basket.html">
+            <span class="hidden">장바구니</span>
+            <i class="icon-cart"></i>
+            <span class="cartCount">0</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+
+
+    <div id="prdDetail" class="shadowBox">
+      <!--
+      <img src="../resource/img/menu/coffee/hot/CH-0001.jpg" alt="뜨거운 아메리카노">
+      <div class="prdName">(HOT)아메리카노</div>
+      <p>에스프레소에 물을 혼합한 커피 메가MGC커피의 부드럽고 풍부한 바디감을 느낄 수 있는 메가MGC커피 대표 음료</p>
+      -->
+    </div>
+
+
+    <div class="optionBox shadowBox">
+      <h3 class="toggleBtn">퍼스널 옵션 <i class="icon-angle_down"></i></h3>
+      <form action="">
+      <!-- 
+        <div class="option_1">
+                    
+            <h4>농도</h4>
+            <label><input type="radio" value="0" name="option1" checked> 선택안함</label>
+            <label><input type="radio" value="1" name="option1"> 연하게</label>
+            <label><input type="radio" value="2" name="option1"> 샷 추가 +500</label>
+            <label><input type="radio" value="3" name="option1"> 2샷 추가 +1,000</label>
+      </div>
+
+      <div class="option_2">
+        <h4>저당 스테비아 추가</h4>
+        <label><input type="radio" name="option2" checked> 선택안함</label>
+        <label><input type="radio" name="option2"> 스테피아 추가 +600원</label>
+      </div>
+
+      <div class="option_3">
+        <h4>개인텀블러 사용(텀블러 크기에 따라 정량보다 적게 제공)</h4>
+        <label><input type="radio" name="option3" checked> 선택안함</label>
+        <label><input type="radio" name="option3"> 텀블러(개인컵) 사용</label>
+      </div>
+    -->
+      </form>
+    </div>
+
+
+    <div class="optionBox shadowBox recommendBox">
+      <form action="">
+        <div class="recoMenu">
+          <h4>추천메뉴</h4>
+          <ul>
+            <!--
+            <li>
+              <label>
+                <img src="../resource/img/menu/Dessert/none/DE-0001.jpg" alt="">
+                <div class="recoInfo">
+                  <div class="recoName">소금빵</div>
+                  <div class="recoPrice"><span>10,000</span>원</div>
+                </div>
+                <input type="radio" name="recoOption" checked>
+              </label>
+            </li>
+         -->
+          </ul>
+        </div>
+      </form>
+    </div>
+
+
+    <footer>
+      <div class="orderBottom">
+        <div class="prdCountBox">
+          <button type="button" class="minus" aria-label="수량내리기"><i class="icon-circle_minus"></i></button>
+          <input type="number" class="prdCount" value="1">
+          <button type="button" class="plus" aria-label="수량올리기"><i class="icon-circle_plus"></i></button>
+        </div>
+        <div class="totalBox">
+          상품금액 &nbsp;<b></b>
+        </div>
+      </div>
+      <div class="orderMenu">
+        <a class="orderBtn" href="#">바로 주문</a>
+        <a class="basketBtn" href="#">장바구니 담기</a>
+      </div>
+    </footer>
+
+  </article>
+
+  <script src="../js/main.js" type="module"></script>
+</body>
+
+</html>

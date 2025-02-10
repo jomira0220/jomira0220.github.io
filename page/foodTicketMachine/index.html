@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>식권자판기</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+
+  <div id="ticketMachine">
+
+    <header>
+      <div class="orderFood"><img src="order-food.png" alt="음식주문"></div>
+      <h1>식권자판기</h1>
+      <p><span>관리자</span>에서 식권 충전 및 잔돈충전을 하고<br /> <span>사용자</span>에서 식권을 구매합니다.</p>
+    </header>
+
+    <div id="headerTable" class="borderBox">
+      <div id="infoTable">
+        <ul>
+            <li><span class="title">식권개수</span> <span id="inventoryQuantity">0개</span></li>
+            <li><span class="title">식권가격</span> <span id="ticketPrice"></span></li>
+            <li><span class="title">관리자 충전 총 금액</span> <span id="adminChargingPriceTotal">0원</span></li>
+            <li><span class="title">사용자 투입 총 금액</span> <span id="userChargingPriceTotal">0원</span></li>
+        </ul>
+      </div>
+      <div id="adminCashList">
+        <ul>
+          <li><span class="title">오만원</span> <span>0원</span></li>
+          <li><span class="title">일만원</span> <span>0원</span></li>
+          <li><span class="title">오천원</span> <span>0원</span></li>
+          <li><span class="title">일천원</span> <span>0원</span></li>
+          <li><span class="title">오백원</span> <span>0원</span></li>
+          <li><span class="title">일백원</span> <span>0원</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tableWrap">
+
+      <div id="adminTable">
+        <div class="borderBox">
+          <table id="adminCashTable">
+            <tbody>
+              <tr>
+                <th colspan="5">관리자</th>
+              </tr>
+              <tr>
+                <td>오만원</td>
+                <td>50,000원</td>
+                <td><button type="button" class="minusBtn">-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn">+</button></td>
+              </tr>
+              <tr>
+                <td>일만원</td>
+                <td>10,000원</td>
+                <td><button type="button" class="minusBtn">-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn">+</button></td>
+              </tr>
+              <tr>
+                <td>오천원</td>
+                <td>5,000원</td>
+                <td><button type="button" class="minusBtn">-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn">+</button></td>
+              </tr>
+              <tr>
+                <td>일천원</td>
+                <td>1,000원</td>
+                <td><button type="button" class="minusBtn">-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn">+</button></td>
+              </tr>
+              <tr>
+                <td>오백원</td>
+                <td>500원</td>
+                <td><button type="button" class="minusBtn">-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn">+</button></td>
+              </tr>
+              <tr>
+                <td>백원</td>
+                <td>100원</td>
+                <td><button type="button" class="minusBtn">-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn">+</button></td>
+              </tr>
+              <tr>
+                <td colspan="2">충전할 총 금액</td>
+                <td colspan="3" class="cashTotal">0원</td>
+              </tr>
+              <tr>
+                <td colspan="5">
+                  <button type="button" id="adminCashChargingBtn"><span>1</span> 잔돈 충전하기</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="borderBox">
+          <table id="adminCountTable">
+            <tbody>
+              <tr>
+                <th colspan="5">충전할 식권 매수</th>
+              </tr>
+              <tr>
+                <td colspan="2"><button type="button" class="minusBtn">-</button></td>
+                <td class="ticketCount">1</td>
+                <td colspan="2"><button type="button" class="plusBtn">+</button></td>
+              </tr>
+              <tr>
+                <td colspan="5"><button type="button" id="ticketChargingBtn"><span>2</span> 식권 충전하기</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div id="userTable">
+        <div class="borderBox">
+          <table id="userCashTable">
+            <tbody>
+              <tr>
+                <th colspan="5">사용자</th>
+              </tr>
+              <tr>
+                <td>오만원</td>
+                <td>50,000원</td>
+                <td><button type="button" class="minusBtn" disabled>-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn" disabled>+</button></td>
+              </tr>
+              <tr>
+                <td>일만원</td>
+                <td>10,000원</td>
+                <td><button type="button" class="minusBtn" disabled>-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn" disabled>+</button></td>
+              </tr>
+              <tr>
+                <td>오천원</td>
+                <td>5,000원</td>
+                <td><button type="button" class="minusBtn" disabled>-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn" disabled>+</button></td>
+              </tr>
+              <tr>
+                <td>일천원</td>
+                <td>1,000원</td>
+                <td><button type="button" class="minusBtn" disabled>-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn" disabled>+</button></td>
+              </tr>
+              <tr>
+                <td>오백원</td>
+                <td>500원</td>
+                <td><button type="button" class="minusBtn" disabled>-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn" disabled>+</button></td>
+              </tr>
+              <tr>
+                <td>백원</td>
+                <td>100원</td>
+                <td><button type="button" class="minusBtn" disabled>-</button></td>
+                <td class="count">0</td>
+                <td><button type="button" class="plusBtn" disabled>+</button></td>
+              </tr>
+              <tr>
+                <td colspan="2">투입할 총 금액</td>
+                <td colspan="3" id="userCashTotal" class="cashTotal">0원</td>
+              </tr>
+              <tr>
+                <td colspan="5">
+                  <button type="button" id="userCashChargingBtn" disabled><span>3</span> 금액 투입하기</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="borderBox">
+          <table id="userCountTable">
+            <tbody>
+              <tr>
+                <th colspan="5">구매할 식권 매수<strong>투입한 금액이 식권 한개 가격 이상이어야만 구매가 가능합니다.</strong></th>
+              </tr>
+              <tr>
+                <td colspan="2"><button type="button" class="minusBtn" disabled>-</button></td>
+                <td class="ticketCount">1</td>
+                <td colspan="2"><button type="button" class="plusBtn" disabled>+</button></td>
+              </tr>
+              <tr>
+                <td colspan="5"><button type="button" id="userTicketBuyBtn" disabled><span>4</span> 식권 구입하기</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="receipt">
+      <div class="receipt_bg">
+        <table>
+          <tr>
+            <th class="title" colspan="2">영수증 출력</th>
+          </tr>
+          <tr>
+            <th>결제금액</th>
+            <td>0원</td>
+          </tr>
+          <tr>
+            <th>투입금액</th>
+            <td>0원</td>
+          </tr>
+          <tr>
+            <th>총거스름돈</th>
+            <td>0원</td>
+          </tr>
+          <tr>
+            <th>오만원</th>
+            <td>0원</td>
+          </tr>
+          <tr>
+            <th>일만원</th>
+            <td>0원</td>
+          </tr>
+          <tr>
+            <th>오천원</th>
+            <td>0원</td>
+          </tr>
+          <tr>
+            <th>일천원</th>
+            <td>0원</td>
+          </tr>
+          <tr>
+            <th>오백원</th>
+            <td>0원</td>
+          </tr>
+          <tr>
+            <th>일백원</th>
+            <td>0원</td>
+          </tr>
+          <tr>
+            <th colspan="2">이용해주셔서 감사합니다.</th>
+          </tr>
+          <tr>
+            <th colspan="2"><button class="close" type="button">다시 주문하기</button></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

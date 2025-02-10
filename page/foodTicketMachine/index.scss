@@ -1,0 +1,422 @@
+@import url('https://webfontworld.github.io/TheJamsil/TheJamsil.css');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-set1:#181823;
+  --color-set2 : #537FE7;
+  --color-set3 : #C0EEF2;
+  --color-set4 : #E9F8F9;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'TheJamsil', sans-serif;
+  font-size: 1em;
+  overflow-x: hidden;
+}
+
+header{
+  margin: 50px 0;
+  
+  h1{
+    font-size:3em;
+    margin: 25px 0 20px; 
+  }
+  
+  p{
+    font-size:1.5em;
+  }
+  
+  span{
+    color:var(--color-set2);
+    line-height:1.5em;
+  }
+  
+  .orderFood {
+    background-color: #f7f7f7;
+    padding: 15px 0px 15px 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    
+    img{
+      width: 100%;
+    }
+  }
+  
+}
+
+
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+tr{
+  border:1px solid #ccc;
+  border-left: 0;
+  border-right: 0;
+}
+
+th, td {
+  height: 50px;
+}
+
+
+table {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'TheJamsil', sans-serif;
+}
+
+button:disabled {
+  filter: grayscale(1);
+}
+
+#ticketMachine {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  
+  > div{
+    margin-bottom: 50px;
+  }
+  
+  div.borderBox {
+    width: 100%;
+    background-color: #fff;
+    border-radius:15px 15px;
+    overflow: hidden;
+    position: relative;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  
+  #headerTable {
+    font-size: 1.3em;
+    width: 100%;
+  
+    
+    
+    
+    th {
+      background-color: #181823;
+      color:#fff;
+    }
+  }
+  
+}
+
+#adminCashList,#infoTable {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+  
+    li {
+      list-style: none;
+      width:16.666%;
+
+      span{
+        display: block;
+        color:#000;
+        padding: 15px 0;
+      }
+      
+      span.title {
+        background-color: var(--color-set1);
+        color:#fff;
+      }
+          
+     
+    }
+  }
+}
+
+#infoTable {
+  ul {
+    li{
+      width: 25%;
+    }
+  }
+}
+
+
+#userCountTable{
+  strong{
+    font-size: 0.5em;
+    display: block;
+    margin-top:10px;
+    color:red;
+    font-weight:400;
+  }
+}
+
+
+.tableWrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  
+  > div{
+    width: 48%;
+  }
+  
+  table{
+
+    tr:first-child{
+        font-size:1.6em;
+        
+        th {
+          padding:20px 0;
+          border:none;
+        }
+    }
+    
+    td:first-child {
+      font-weight: bold;
+      background-color: var(--color-set1);
+      color:#fff;
+    }
+    
+    td{
+      border:none;
+    }
+    
+  }
+  
+  .minusBtn,.plusBtn {
+    background-color: #C0EEF2;
+    color:#181823;
+    height: 55px;
+    border: 6px solid #fff;
+    border-radius: 14px;
+  }
+  
+  button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    border:none;
+    background-color: var(--color-set2);
+    color:#fff;
+    font-weight: bold;
+    
+    span{
+      font-size: 0.9em;
+      vertical-align: middle;
+      background-color: #fff;
+      color:var(--color-set2);
+      width: 28px;
+      height: 28px;
+      line-height: 29px;
+      display: inline-block;
+      border-radius: 100%;
+    }
+  }
+  
+  #adminCountTable, #userCountTable {
+    
+    td:first-child {
+      background: none;
+    }
+    
+    .minusBtn {
+      width: 50%;
+      float: right;
+    }
+    
+    .plusBtn {
+      width: 50%;
+      float: left;
+    }
+    
+  }
+  
+  button.on {
+    background-color: #4473e2;
+  }
+  
+  .minusBtn.on, .plusBtn.on{
+    background-color: #9bdee3;
+  }
+  
+}
+
+
+
+
+
+
+
+
+#receipt.on { 
+  display: flex; 
+}
+
+#receipt {
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.8);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  
+  .receipt_bg {
+    width: 330px;
+    background-image: url(receipt_bg.png);
+    background-color: #fff;
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    padding-bottom:154px;
+    overflow: hidden;
+
+    
+    .title {
+      background-color: var(--color-set2);
+      border-radius: 20px 20px 0 0;
+      color:#fff;
+    }
+    
+    table,tr,th,td {
+      border:none;
+    }
+    
+    td {
+      border-bottom: 1px solid #f7f7f7;
+    }
+    
+    th,td{
+      height: 45px;
+    }
+    
+    th {
+      background-color: var(--color-set3);
+    }
+
+  }
+  
+  button {
+    border:none;
+    border-radius: 15px;
+    width: 55%;
+    height: 45px;
+    background-color: var(--color-set2);
+    color:#fff;
+    font-size: 1.2em;
+    margin: 5px 0 15px;
+  }
+  
+}
+
+
+
+@media screen and (max-width:500px) {
+  html,body {
+    font-size:0.9em;
+  }
+  #ticketMachine {
+    width:90%;
+  }
+  .tableWrap{
+    div {
+      width: 100%;
+    }
+  }
+  
+  header {
+    p {
+      font-size: 1.2em;
+    }
+  }
+  
+  #adminCashList,#infoTable{
+    ul{
+      li{
+        width: 50%;
+      }
+    }
+  }
+  
+  #receipt {
+    .receipt_bg {
+      width: 80%;
+      padding-bottom: 37%;
+    }
+  }
+  
+}
+
+
+#guideBox {
+  background-color:rgba(0,0,0,0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 555;
+  text-align: center;
+  
+  .inner {
+    width: 320px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .close {
+      margin-top: 15px;
+      background-color: var(--color-set1);
+    }
+    
+  }
+  
+  
+  
+  p{
+    margin: 20px 0;
+    word-break: keep-all;
+    line-height: 1.5em;
+  }
+  
+  button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-set2);
+    border:none;
+    border-radius: 15px;
+    color:#fff;
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>결제하기</title>
+  <link rel="stylesheet" href="./../css/reset.css">
+  <link rel="stylesheet" href="./../css/commen.css">
+  <link rel="stylesheet" href="./../css/all.css">
+</head>
+
+<body>
+
+  <article id="order" class="payment">
+
+    <header>
+      <div class="backBtn"><span class="hidden">뒤로돌아가기</span><i class="icon-left_arrow"></i></div>
+      <h2>결제하기</h2>
+      <ul class="mainGnb"></ul>
+    </header>
+
+  
+
+      <div id="storeName"></div>
+
+      <h4 class="shadowBox">
+        주문상품
+        <span class="toggleBtn">
+          <span class="orderContraction"><!--(HOT)아메리카노 외 1건--></span> <i class="icon-angle_down"></i>
+        </span>
+        <ul id="orderList"></ul>
+      </h4>
+
+
+    <div class="payWrap">
+      <div id="storeRequest" class="shadowBox">
+        <h5>요청사항</h5>
+        <h6>매장 요청사항</h6>
+        <input type="text" placeholder="매장 요청 사항이 있으면 적어주세요.">
+        <div class="packagingRequest">
+          <h6>포장 요청사항</h6>
+          <label for="packaging1"><input id="packaging1" type="radio" name="packaging" checked> 포장해주세요.</label>
+          <label for="packaging2"><input id="packaging2" type="radio" name="packaging"> 매장에서 먹고 갈게요.</label>
+        </div>
+      </div>
+
+      <div id="count" class="shadowBox">
+        <h5>쿠폰적용</h5>
+        <a class="linkBox" href="">쿠폰<i class="icon-right_arrow"></i></a>
+      </div>
+
+      <div id="sale" class="shadowBox">
+        <h5>할인적용</h5>
+        <a class="linkBox" href="">선물<i class="icon-right_arrow"></i></a>
+        <div><i class="icon-info"></i> 쿠폰 적용 후 할인 적용해주세요.</div>
+      </div>
+
+      <div id="pay" class="shadowBox">
+        <h5>결제수단</h5>
+        <label for="card"><input id="card" type="radio" name="pay" checked>신용카드</label>
+        <label for="easypay"><input id="easypay" type="radio" name="pay">간편카드결제</label>
+        <label for="npay"><input id="npay" type="radio" name="pay">네이버페이</label>
+        <label for="kakaopay"><input id="kakaopay" type="radio" name="pay">카카오페이</label>
+        <label for="payco"><input id="payco" type="radio" name="pay">페이코</label>
+      </div>
+
+      <div id="cashReceipts" class="shadowBox">
+        <h5>현금영수증</h5>
+        <label for="default"><input id="default" type="radio" name="cashReceipts" checked>신청안함</label>
+        <label for="individual"><input id="individual" type="radio" name="cashReceipts">개인소득공제용</label>
+        <label for="buisnessman"><input id="buisnessman" type="radio" name="cashReceipts">사업자증빙용</label>
+
+        <input id="saveCashReceipts" type="checkbox" name="cashReceipts">
+        <label for="saveCashReceipts">현금영수증 발급정보를
+          저장합니다.</label>
+      </div>
+
+      <div id="totalOrder" class="shadowBox">
+        <ul>
+          <li class="totalPrice">상품금액 <span>6,800원</span></li>
+          <li class="discount">할인금액 <span>-0원</span></li>
+          <li class="resultPrice">결제금액 <b>6,800원</b></li>
+        </ul>
+        <h6 class="toggleBtn">메가오더 유의사항 <i class="icon-angle_down"></i></h6>
+      </div>
+    </div>
+
+    <footer>
+      <button id="payBtn" type="submit">결제하기</button>
+    </footer>
+
+  </article>
+
+  <script src="../js/main.js" type="module"></script>
+</body>
+
+</html>

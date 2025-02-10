@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*
+ * File       : font.css
+ * Author     : STUDIO-JT (KMS, NICO)
+ * Guideline  : JTstyle.2.1
+ *
+ * SUMMARY:
+ * 01) KakaoBig 
+ * 02) Gilroy
+ */
+
+
+
+/* ************************************** *
+ * KakaoBig
+ * ************************************** */  
+@font-face {
+    font-family: 'KakaoBig';
+    font-weight: 400;
+    src: url('../fonts/kakao/KakaoBig.woff2') format('woff2'), 
+         url('../fonts/kakao/KakaoBig.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'KakaoBig';
+    font-weight: 600;
+    src: url('../fonts/kakao/KakaoBig-Bold.woff2') format('woff2'), 
+         url('../fonts/kakao/KakaoBig-Bold.woff') format('woff');
+}
+
+
+
+/* ************************************** *
+ * Gilroy
+ * ************************************** */
+@font-face {
+    font-family: 'gilroy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/gilroy/Gilroy-Medium.woff2') format('woff2'), 
+         url('../fonts/gilroy/Gilroy-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'gilroy';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/gilroy/Gilroy-SemiBold.woff2') format('woff2'), 
+         url('../fonts/gilroy/Gilroy-SemiBold.woff') format('woff');
+}

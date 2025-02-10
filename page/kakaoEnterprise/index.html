@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카카오엔터프라이즈</title>
+  <link rel="stylesheet" href="./css/swiper.css" />
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="header_inner">
+    <h1 id="logo">
+      <a href="#">
+        <span class="hidden">kakaoenterprise</span>
+        <svg width="145" height="20" viewBox="0 0 145 20">
+          <path fill="#191919"
+            d="M2.4,10.6L7,16.3l1.3-1.1l-3.9-4.7l3.4-4.3l-1.4-1L2.4,10.6z M0,1.2V16h1.8V0.8L0,1.2z M9.9,13.2 c0-0.9,0.3-1.8,1.1-2.4c0.7-0.6,1.7-0.8,3.1-0.8h2V9.3c0-1.6-0.7-2.4-2.1-2.4c-0.5,0-1,0.1-1.5,0.2c-0.5,0.1-0.9,0.3-1.4,0.5 l-0.5-1.3c0.5-0.3,1.1-0.5,1.6-0.7c0.6-0.2,1.2-0.2,1.8-0.2c2.5,0,3.7,1.3,3.7,4V16h-1.3l-0.2-1.1c-0.5,0.4-1.1,0.7-1.7,1 c-0.5,0.2-1.1,0.3-1.7,0.3c-0.8,0-1.6-0.2-2.2-0.8C10.2,14.8,9.9,14,9.9,13.2z M13.2,14.8c0.3,0,0.5,0,0.8-0.1 c0.3-0.1,0.5-0.2,0.8-0.3c0.3-0.1,0.5-0.2,0.7-0.4c0.2-0.2,0.4-0.3,0.6-0.5v-2.4h-1.8c-0.9,0-1.6,0.2-2,0.5c-0.5,0.4-0.7,1-0.7,1.5 C11.6,14.2,12.1,14.8,13.2,14.8z M22.7,16h-1.8V1.2l1.8-0.4V16z M27.4,5.3l1.4,1l-3.4,4.3l3.9,4.7L28,16.3l-4.6-5.7L27.4,5.3z M30.8,13.2c0-0.9,0.3-1.8,1.1-2.4c0.7-0.6,1.7-0.8,3.1-0.8h2V9.3c0-1.6-0.7-2.4-2.1-2.4c-0.5,0-1,0.1-1.5,0.2 c-0.5,0.1-1,0.3-1.4,0.5l-0.5-1.3c0.5-0.3,1.1-0.5,1.7-0.7c0.6-0.2,1.2-0.2,1.8-0.2c2.5,0,3.7,1.3,3.7,4V16h-1.3l-0.2-1.1 c-0.5,0.4-1.1,0.7-1.7,1c-0.5,0.2-1.1,0.3-1.7,0.3c-0.8,0-1.6-0.2-2.2-0.8C31.1,14.8,30.8,14,30.8,13.2z M34.2,14.8 c0.3,0,0.5,0,0.8-0.1c0.3-0.1,0.5-0.2,0.8-0.3c0.3-0.1,0.5-0.2,0.7-0.4c0.2-0.2,0.4-0.3,0.6-0.5v-2.5h-1.8c-0.9,0-1.6,0.2-2,0.5 c-0.5,0.4-0.7,1-0.7,1.5C32.6,14.2,33.1,14.8,34.2,14.8z M45.8,5.4c1.3-0.1,2.6,0.5,3.4,1.4s1.2,2.3,1.2,4.1c0,1.8-0.4,3.1-1.2,4 c-0.8,0.9-2,1.4-3.4,1.4c-1.3,0.1-2.6-0.5-3.4-1.4c-0.8-1-1.2-2.3-1.2-4c0-1.7,0.4-3.1,1.3-4.1C43.3,5.8,44.5,5.3,45.8,5.4z M45.8,6.8c-0.8,0-1.6,0.3-2.1,1c-0.5,0.7-0.7,1.7-0.7,3c0,1.3,0.2,2.3,0.7,3c1,1.2,2.7,1.3,3.8,0.4c0.2-0.1,0.3-0.3,0.4-0.4 c0.5-0.7,0.7-1.7,0.7-3c0-1.3-0.2-2.3-0.7-3C47.4,7.1,46.6,6.7,45.8,6.8z">
+          </path>
+          <path fill="#191919"
+            d="M61.9,10.4c0,0.4,0,0.8-0.1,1.2h-6.3c0.1,1.7,1,2.6,2.9,2.6c0.9,0,1.8-0.2,2.7-0.6l0.6,1.8 c-1.1,0.6-2.4,0.9-3.6,0.9c-3.6,0-5.3-1.9-5.3-5.6c0-3.5,1.8-5.6,4.8-5.6C60.4,5.1,61.9,7,61.9,10.4z M55.5,9.7h3.8 c0-1.8-0.6-2.6-1.9-2.6C56.2,7.1,55.5,8.1,55.5,9.7z M63.8,5.4h1.9l0.4,1.1c0.9-0.8,2.1-1.3,3.4-1.4c2.4,0,3.6,1.4,3.6,4.1V16h-2.7 V9.1c0-1.2-0.4-1.7-1.9-1.7c-0.7,0-1.3,0.2-2,0.4V16h-2.7V5.4z M74.3,5.6L76,5.4V3.3l2.7-0.6v2.7h3.2v2h-3.2V12 c0,1.6,0.4,1.9,1.2,1.9c0.6,0,1.2-0.2,1.8-0.3l0.6,1.9c-1,0.5-2,0.8-3.1,0.8c-2.2,0-3.2-1.4-3.2-4.1V7.4h-1.7L74.3,5.6z M92.4,10.4 c0,0.4,0,0.8-0.1,1.2H86c0.1,1.7,1,2.6,2.9,2.6c0.9,0,1.8-0.2,2.7-0.6l0.6,1.8c-1.1,0.6-2.4,0.9-3.6,0.9c-3.6,0-5.3-1.9-5.3-5.6 c0-3.5,1.8-5.6,4.8-5.6C90.9,5.1,92.4,7,92.4,10.4z M86,9.7h3.8c0-1.8-0.6-2.6-1.9-2.6C86.7,7.1,86,8.1,86,9.7z M96.9,8v8h-2.7V5.4 h1.9l0.4,1.1c0.9-0.9,2.1-1.4,3.3-1.5c0.3,0,0.6,0,0.9,0.1l-0.3,2.6c-0.5-0.1-1-0.2-1.5-0.2C98.2,7.7,97.5,7.7,96.9,8z M104.7,16v4 h-2.7V5.4h1.9l0.3,0.9c0.8-0.8,1.9-1.2,3-1.2c2.8,0,4,2.1,4,5.4c0,3.5-2,5.8-4.9,5.8C105.9,16.3,105.3,16.2,104.7,16z M104.7,7.7 v6.5c0.3,0,0.7,0.1,1,0.1c2.1,0,2.9-1.4,2.9-3.7c0-2-0.5-3.2-2.2-3.2C105.8,7.3,105.3,7.4,104.7,7.7z M116,8v8h-2.7V5.4h1.9l0.4,1.1 c0.9-0.9,2.1-1.4,3.3-1.5c0.3,0,0.6,0,0.9,0.1l-0.3,2.6c-0.5-0.1-1-0.2-1.5-0.2C117.4,7.7,116.7,7.7,116,8z M120.5,2l2-2l2,2l-2,2 L120.5,2z M123.9,5.4V16h-2.7V5.4H123.9z M130.7,9.8c2.2,0.8,2.9,1.6,2.9,3.2c0,2.1-1.4,3.4-4.1,3.4c-1.3,0-2.6-0.3-3.9-0.8l0.5-2.1 c1.1,0.4,2.2,0.7,3.4,0.7c1.1,0,1.5-0.4,1.5-1c0-0.6-0.3-0.9-2.1-1.5c-2.2-0.8-3-1.5-3-3.3c0-1.9,1.6-3.2,3.9-3.2 c1.3,0,2.5,0.3,3.6,0.8l-0.7,1.9c-0.8-0.4-1.7-0.6-2.6-0.6c-1,0-1.6,0.5-1.6,1.1C128.6,8.9,129.2,9.2,130.7,9.8z M144.2,10.4 c0,0.4,0,0.8-0.1,1.2h-6.3c0.1,1.7,1,2.6,2.9,2.6c0.9,0,1.8-0.2,2.7-0.6l0.6,1.8c-1.1,0.6-2.4,0.9-3.6,0.9c-3.6,0-5.3-1.9-5.3-5.6 c0-3.5,1.8-5.6,4.8-5.6C142.6,5.1,144.2,7,144.2,10.4z M137.7,9.7h3.8c0-1.8-0.6-2.6-1.9-2.6C138.5,7.1,137.8,8.1,137.7,9.7z">
+          </path>
+        </svg>
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">기술</a></li>
+        <li><a href="#">고객사례</a></li>
+        <li><a href="#">개발자</a></li>
+        <li><a href="#">도입문의</a></li>
+        <li><a href="#">회사정보</a></li>
+      </ul>
+    </nav>
+    <a id="" href="#">
+      인재영업
+      <div class="header__career-circle">
+        <i class="ke-guide--icon header__career-circle-hover">
+          <svg width="12" height="12" viewBox="0 0 12 12">
+            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M4.1,2.5h5.4v5.3"></path>
+            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M8.9,3.2L2.2,9.8"></path>
+          </svg>
+        </i>
+        <i class="ke-guide--icon header__career-circle-default">
+          <svg width="12" height="12" viewBox="0 0 12 12">
+            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M4.1,2.5h5.4v5.3"></path>
+            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M8.9,3.2L2.2,9.8"></path>
+          </svg>
+        </i>
+      </div>
+    </a>
+  </div>
+  </header>
+  <main id="main" class="main_container">
+    <section class="main_visual">
+      <div class="swiper main_visual__slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="main_visual__titlewarp">
+              <div class="main_visusl__title">중진공 지원 사업 참여하고 <br>카카오 i 라스 70% 할인 받으세요!</div>
+              <div class="main_visusl__action btn__basic">자세히 보기</div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="main_visual__titlewarp">
+              <div class="main_visusl__title">안면인식⬝지능형CCTV 인증 획득 <br>"AI로 보안 강화"</div>
+              <div class="main_visusl__action btn__basic">자세히 보기</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-control">
+          <button class="swiper-button-prev">
+            <div class="ke-guide--icon">
+              <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 12L3 6.93671L8 2" stroke="black" stroke-width="3" stroke-miterlimit="10"></path>
+              </svg>
+            </div>
+            <span class="hidden">이전</span>
+          </button>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-state swiper-state--play">
+            <button class="swiper-state__btn play">
+              <div class="ke-guide--icon"><svg width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M14,4h4v16h-4V4z M6,20h4V4H6V20z"></path>
+                </svg>
+              </div>
+              <span class="hidden">일시정지</span>
+            </button><!-- .swiper-state__btn -->
+            <button class="swiper-state__btn pause">
+              <div class="ke-guide--icon"><svg width="8" height="8" viewBox="0 0 8 8">
+                  <path d="M7,4L1,0v8L7,4z"></path>
+                </svg>
+              </div>
+              <span class="hidden">재생</span>
+            </button><!-- .swiper-state__btn -->
+          </div>
+          <button class="swiper-button-next">
+            <div class="ke-guide--icon">
+              <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 12L7 6.93671L2 2" stroke="black" stroke-width="3" stroke-miterlimit="10"></path>
+              </svg>
+            </div>
+            <span class="hidden">다음</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="main_news">
+      <div class="wrap">
+        <div class="main_news__title">
+          <img src="./img/Connect.svg" alt="">
+          <img src="./img/Solve.svg" alt="">
+          <img src="./img/Create.svg" alt="">
+          <img src="./img/_AI.svg" alt="">
+        </div>
+        <div class="main_news__content">
+          <div class="main_news__list">
+            <div class="main_news__item">
+              <div class="main_news__cate">
+                <a href=""><span>새소식</span></a>
+                <img class="cate_icon" src="./img/icon-new.png" alt="NEW">
+              </div>
+
+              <a class="main_news__post" href="">
+                <h3 class="main_news__posttitle">
+                  <span>최동진 CAIO 인터뷰: <br>초거대 AI 시대에 기업 경쟁력을 확보하는 방법</span>
+                </h3>
+
+                <div class="main_news__postthumb">
+                  <figure>
+                    <img 
+                      src="./img/사진_최동진-카카오엔터프라이즈-최고인공지능책임자CAIO-겸-부사장-1-562x390.jpg"
+                      alt="카카오엔터프라이즈-최고인공지능책임자CAIO-겸-부사장-최동진">
+                  </figure>
+                </div>
+              </a>
+
+              <div class="main_news__tag">
+                <a href="#"><span>#고성능컴퓨팅</span></a>
+                <a href="#"><span>#챗GPT</span></a>
+                <a href="#"><span>#초거대AI</span></a>
+                <a href="#"><span>#카카오i엔진</span></a>
+              </div><!-- .ke-isotope-list__tag -->
+            </div>
+            <div class="main_news__item">
+              <div class="main_news__cate">
+                <a href=""><span>새소식</span></a>
+                <img class="cate_icon" src="./img/icon-new.png" alt="NEW">
+              </div>
+
+              <a class="main_news__post" href="">
+                <h3 class="main_news__posttitle">
+                  <span>최동진 CAIO 인터뷰: <br>초거대 AI 시대에 기업 경쟁력을 확보하는 방법</span>
+                </h3>
+
+                <div class="main_news__postthumb">
+                  <figure>
+                    <img 
+                      src="./img/사진_최동진-카카오엔터프라이즈-최고인공지능책임자CAIO-겸-부사장-1-562x390.jpg"
+                      alt="카카오엔터프라이즈-최고인공지능책임자CAIO-겸-부사장-최동진">
+                  </figure>
+                </div>
+              </a>
+
+              <div class="main_news__tag">
+                <a href="#"><span>#고성능컴퓨팅</span></a>
+                <a href="#"><span>#챗GPT</span></a>
+                <a href="#"><span>#초거대AI</span></a>
+                <a href="#"><span>#카카오i엔진</span></a>
+              </div><!-- .ke-isotope-list__tag -->
+            </div>
+          </div><!-- close main_news__list -->
+          <div class="main_news__list">
+            <div class="main_news__item">
+              <div class="main_news__cate">
+                <a href=""><span>새소식</span></a>
+                <img class="cate_icon" src="./img/icon-new.png" alt="NEW">
+              </div>
+
+              <a class="main_news__post" href="">
+                <h3 class="main_news__posttitle">
+                  <span>최동진 CAIO 인터뷰: <br>초거대 AI 시대에 기업 경쟁력을 확보하는 방법</span>
+                </h3>
+
+                <div class="main_news__postthumb">
+                  <figure>
+                    <img 
+                      src="./img/사진_최동진-카카오엔터프라이즈-최고인공지능책임자CAIO-겸-부사장-1-562x390.jpg"
+                      alt="카카오엔터프라이즈-최고인공지능책임자CAIO-겸-부사장-최동진">
+                  </figure>
+                </div>
+              </a>
+
+              <div class="main_news__tag">
+                <a href="#"><span>#고성능컴퓨팅</span></a>
+                <a href="#"><span>#챗GPT</span></a>
+                <a href="#"><span>#초거대AI</span></a>
+                <a href="#"><span>#카카오i엔진</span></a>
+              </div><!-- .ke-isotope-list__tag -->
+            </div>
+            <div class="main_news__item">
+              <div class="main_news__cate">
+                <a href=""><span>새소식</span></a>
+                <img class="cate_icon" src="./img/icon-new.png" alt="NEW">
+              </div>
+
+              <a class="main_news__post" href="">
+                <h3 class="main_news__posttitle">
+                  <span>최동진 CAIO 인터뷰: <br>초거대 AI 시대에 기업 경쟁력을 확보하는 방법</span>
+                </h3>
+
+                <div class="main_news__postthumb">
+                  <figure>
+                    <img 
+                      src="./img/사진_최동진-카카오엔터프라이즈-최고인공지능책임자CAIO-겸-부사장-1-562x390.jpg"
+                      alt="카카오엔터프라이즈-최고인공지능책임자CAIO-겸-부사장-최동진">
+                  </figure>
+                </div>
+              </a>
+
+              <div class="main_news__tag">
+                <a href="#"><span>#고성능컴퓨팅</span></a>
+                <a href="#"><span>#챗GPT</span></a>
+                <a href="#"><span>#초거대AI</span></a>
+                <a href="#"><span>#카카오i엔진</span></a>
+              </div><!-- .ke-isotope-list__tag -->
+            </div>
+          </div>
+        </div>
+        <div class="main_news__more">
+          <a href="#"><span>더 불러오기</span>
+            <div class="readmore-icon"></div>
+          </a>
+        </div><!-- close main_news__more -->
+      </div>
+    </section>
+    <section class="main_service">
+      <div class="wrap">
+        <div class="main_service__head">
+          <h2 class="main_section__title">기술과 서비스</h2>
+        </div>
+        <div class="main_service__list">
+          <div>
+            <img src="./img/main-marqee-place-1.jpg" alt="">
+          </div>
+          <div class="main_service__message">
+            <div class="main_service__overlay"></div>
+
+            <div class="main_service__txt">
+              <h3 class="main_service__name">카카오 i 커넥트 플레이스</h3>
+              <p class="main_service__description">카카오엔터프라이즈와 AI가 만드는 <br>
+                더 스마트하고 특별한 공간</p>
+            </div><!-- .main-service__txt -->
+
+            <div class="main_service__logo">
+              <div class="main_service__logoimg">
+                <img width="200" height="48" class="basic" src="./img/kicp_logo_b.png" alt="">
+                <img width="200" height="48" class="hover" src="./img/kicp_logo_w.png" alt="">
+              </div>
+
+              <div class="main_service__logoicon">
+                <i class="">
+                  <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                  </svg>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main_banner">
+      <div class="wrap_wide">
+        <h2 class="main_banner__title">카카오엔터프라이즈는<br>고객, 파트너와 함께 성장하고 있습니다</h2>
+        <div class="main_banner__link">
+          <a href="#" class=""><span>고객사례 보기</span></a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="main_business">
+      <div class="wrap">
+        <div class="main_business__title">
+          <h2 class="main_section__title"></h2>
+        </div>
+        <ul class="main-business__list">
+          <li>
+            <span class="main-business__label">회사소개</span>
+            <p class="main-business__txt">카카오엔터프라이즈는 <br>
+              비즈니스와 일상에 기술을 더하여 <br>
+              디지털 혁신을 만들어갑니다.</p>
+
+            <a href="/info/about/" class="">
+              <span>회사소개 바로가기</span>
+              <div class="ke-btn__point-circle">
+                <i class="ke-guide--icon ke-btn__point-hover"><svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                  </svg>
+                </i>
+                <i class="ke-guide--icon ke-btn__point-default"><svg width="8" height="12" viewBox="0 0 8 12"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                  </svg>
+                </i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <span class="main-business__label">개발자</span>
+            <p class="main-business__txt">카카오엔터프라이즈는 <br>
+              개발자들과 함께 성장하는 기술 <br>
+              기업입니다.</p>
+
+            <a href="/developer/" class="">
+              <span>개발자 바로가기</span>
+              <div class="">
+                <i class="ke-guide--icon ke-btn__point-hover"><svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                  </svg>
+                </i>
+                <i class="ke-guide--icon ke-btn__point-default"><svg width="8" height="12" viewBox="0 0 8 12"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                  </svg>
+                </i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <span class="main-business__label">인재영입</span>
+            <p class="main-business__txt">국내 최고의 개발자, 기획자, <br>
+              디자이너 그리고 비즈니스 전문가가 모여 <br>
+              새로운 길을 만들어갑니다.</p>
+
+            <a href="https://careers.kakaoenterprise.com/" target="_blank" rel="noopener noreferrer"
+              class="ke-btn__point ke-btn--type-01 ke-btn--icon-outlink">
+              <span>인재영입 바로가기</span>
+              <div class="ke-btn__point-circle">
+                <i class="ke-guide--icon ke-btn__point-hover"><svg width="12" height="12" viewBox="0 0 12 12">
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M4.1,2.5h5.4v5.3">
+                    </path>
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M8.9,3.2L2.2,9.8">
+                    </path>
+                  </svg>
+                </i>
+                <i class="ke-guide--icon ke-btn__point-default"><svg width="12" height="12" viewBox="0 0 12 12">
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M4.1,2.5h5.4v5.3">
+                    </path>
+                    <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M8.9,3.2L2.2,9.8">
+                    </path>
+                  </svg>
+                </i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="global_inquiry_banner">
+      <div class="global_inquiry__title">
+        카카오엔터프라이즈의 기술과<br> 서비스에 대해 문의하세요
+      </div>
+      <div>
+        <a href="#"><span>문의하기</span></a>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer id="footer">
+    <div class="footer__inner">
+      <div class="footer__extend">
+        <nav class="footer__menu-wrap">
+          <ul class="footer__menu">
+            <li class="footer__menu--group footer__dropdown">
+              <a href="#"><span>회사소개</span>
+                <i class="ke-guide--icon">
+                  <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 1L6.56329 6L11.5 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                  </svg>
+                </i>
+              </a>
+              <ul>
+                <li><a href="#"><span>회사소개</span></a></li>
+                <li><a href="#"><span>보도자료</span></a></li>
+                <li><a href="#"><span>새소식</span></a></li>
+                <li><a href="#"><span>마케팅 행사</span></a></li>
+                <li><a href="#" target="_blank" rel="noopener"><span>인재영입</span></a></li>
+                <li><a href="#"><span>상생 프로그램</span></a></li>
+              </ul>
+            </li>
+            <li class="privacy"><a href="#" target="_blank"
+                rel="noopener"><span>개인정보처리방침</span></a></li>
+            <li><a href="#" target="_blank" rel="noopener"><span>사이버윤리실</span></a>
+            </li>
+            <li class="footer__menu--group footer__dropdown">
+              <a href="#"><span>공지사항</span><i class="ke-guide--icon"><svg width="13" height="8" viewBox="0 0 13 8"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 1L6.56329 6L11.5 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                  </svg>
+                </i></a>
+              <ul>
+                <li><a href="#"><span>공고사항</span></a></li>
+                <li><a href="#" target="_blank"
+                    rel="noopener"><span>개인정보처리방침변경안내</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#" target="_blank" rel="noopener"><span>고객지원</span></a></li>
+          </ul><!-- .footer__menu -->
+        </nav><!-- .footer__menu-wrap -->
+
+        <div class="footer__relation footer__dropdown">
+          <button class="footer__relation-button">
+            <span>관련사이트</span>
+            <i class="ke-guide--icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke="#000000" stroke-width="2" d="M6,0.5v11"></path>
+                <path fill="none" stroke="#000000" stroke-width="2" d="M0.5,6h11"></path>
+              </svg>
+            </i>
+          </button><!-- .footer__relation-button -->
+        </div><!-- .footer__relation -->
+      </div><!-- .footer__extend -->
+
+      <nav class="footer__sns-wrap">
+        <ul class="footer__sns">
+          <li class="footer__sns--instagram">
+            <a href="https://www.instagram.com/kakaoenterprise" target="_blank" rel="noopener">
+              <div class="ke-guide--icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+	 M8,12.5C8,10,10,8,12.5,8h7C22,8,24,10,24,12.5v7c0,2.5-2,4.5-4.5,4.5h-7C10,24,8,22,8,19.5V12.5z M12.5,9.2
+	c-1.8,0-3.3,1.5-3.3,3.3v7c0,1.8,1.5,3.3,3.3,3.3h7c1.8,0,3.3-1.5,3.3-3.3v-7c0-1.8-1.5-3.3-3.3-3.3H12.5z M21,12.1
+	c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9C20.6,11.2,21,11.6,21,12.1z M16.1,18.6
+	c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5C18.6,17.5,17.5,18.6,16.1,18.6z M16.1,12.2c-2.1,0-3.8,1.7-3.8,3.8
+	s1.7,3.8,3.8,3.8c2.1,0,3.8-1.7,3.8-3.8S18.2,12.2,16.1,12.2z"></path>
+                </svg>
+              </div><span class="sr-only">인스타그램</span>
+            </a>
+          </li>
+          <li class="footer__sns--facebook">
+            <a href="https://www.facebook.com/kakaoenterprise" target="_blank" rel="noopener">
+              <div class="ke-guide--icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+	 M13.4,23.6v-6.8h-2.8v-2.8h2.8v-2.1c0-2.4,1.6-3.8,4.1-3.8C18.8,8,20,8.2,20,8.2v2.4h-1.4c-1.4,0-1.8,0.8-1.8,1.5v1.8h3l-0.5,2.8
+	h-2.5v6.8H13.4z"></path>
+                </svg>
+              </div><span class="sr-only">페이스북</span>
+            </a>
+          </li>
+          <li class="footer__sns--blog">
+            <a href="https://tech.kakaoenterprise.com" target="_blank" rel="noopener">
+              <div class="ke-guide--icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+	 M20.2,20.9c0.8-0.6,1.2-1.5,1.2-2.7c0-0.7-0.2-1.3-0.6-1.8c-0.4-0.5-0.9-0.8-1.5-1c0.6-0.2,1-0.6,1.3-1c0.3-0.5,0.5-1,0.5-1.6
+	c0-1.1-0.4-2-1.2-2.6c-0.8-0.6-1.9-0.9-3.5-0.9H12v12.6h4.9C18.3,21.9,19.4,21.6,20.2,20.9z M14.5,14.6v-3.2h1.8
+	c0.7,0,1.2,0.1,1.6,0.4c0.3,0.3,0.5,0.7,0.5,1.2c0,1-0.7,1.5-2,1.6H14.5z M14.5,19.8h2.2c0.6,0,1.1-0.1,1.4-0.4
+	c0.3-0.3,0.5-0.7,0.5-1.2c0-1.2-0.6-1.7-1.8-1.8h-2.4V19.8z"></path>
+                </svg>
+              </div><span class="sr-only">블로그</span>
+            </a>
+          </li>
+          <li class="footer__sns--youtube">
+            <a href="https://www.youtube.com/channel/UCVxXa4KKYyw3mQ3KYqze9Ng/featured" target="_blank" rel="noopener">
+              <div class="ke-guide--icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+	 M22.3,11c0.7,0.2,1.2,0.7,1.4,1.4c0.3,1.3,0.3,3.9,0.3,3.9s0,2.6-0.3,3.9c-0.2,0.7-0.7,1.2-1.4,1.4C21,21.9,16,21.9,16,21.9
+	s-5,0-6.3-0.3c-0.7-0.2-1.2-0.7-1.4-1.4C8,18.9,8,16.3,8,16.3s0-2.6,0.3-3.9c0.2-0.7,0.7-1.2,1.4-1.4c1.2-0.3,6.3-0.3,6.3-0.3
+	S21,10.7,22.3,11z M14.4,13.9v4.8l4.2-2.4L14.4,13.9z"></path>
+                </svg>
+              </div><span class="sr-only">유튜브</span>
+            </a>
+          </li>
+          <li class="footer__sns--kakao">
+            <a href="https://pf.kakao.com/_lVmtT" target="_blank" rel="noopener">
+              <div class="ke-guide--icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+	 M19.9,18.3H21v-2.5c0-0.5-0.1-0.9-0.4-1.3c-0.3-0.3-0.7-0.5-1.1-0.5c-0.6,0-1,0.2-1.2,0.6v-2.2h-1.1v5.9h1.1v-2.2
+	c0-0.7,0.4-1,0.9-1c0.5,0,0.8,0.3,0.8,0.8V18.3z M15,16.1c-0.2,0.7-0.9,1.2-1.7,1.2c-1,0-1.9-0.8-1.9-1.9c0-1.1,0.8-1.9,1.9-1.9
+	c0.8,0,1.5,0.5,1.7,1.3h1.2c-0.3-1.4-1.4-2.4-2.8-2.4c-1.7,0-3,1.3-3,3c0,1.7,1.3,3,3,3c1.4,0,2.5-0.9,2.8-2.3H15z M8,15.4
+	C8,11.3,11.6,8,16,8c4.4,0,8,3.3,8,7.4s-3.6,7.4-8,7.4c-0.5,0-1.1,0-1.6-0.1l-0.1,0l-3,2.3c-0.1,0.1-0.3,0-0.3-0.2v-3.5l0,0
+	C9.3,19.9,8,18.4,8,15.4z"></path>
+                </svg>
+              </div><span class="sr-only">카카오 플러스친구</span>
+            </a>
+          </li>
+        </ul><!-- .footer__sns -->
+      </nav><!-- .footer__sns-wrap -->
+
+      <div class="footer__copyright">
+        <p lang="en">© Kakao Enterprise Corp.</p>
+      </div><!-- .footer__copyright -->
+    </div><!-- .footer__inner -->
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script>
+    var main_visual = new Swiper(".main_visual__slide", {
+      spaceBetween: 30,
+      effect: "fade",
+      parallax: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    document.querySelector(".swiper-button-pause").addEventListener("click", () => {
+      main_visual.autoplay.stop();
+    })
+
+    document.querySelector(".swiper-button-play").addEventListener("click", () => {
+      main_visual.autoplay.start();
+    });
+  </script>
+
+</body>
+
+</html>

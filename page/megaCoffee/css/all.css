@@ -1,0 +1,1281 @@
+
+
+
+#popBox.off {
+  display: none !important;
+}
+
+.toggleBtn {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggleBtn i {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+.shadowBox {
+  background-color: #fff;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* === orderStep_1 주문 메뉴 선택 === */
+
+#order {
+  padding-top: var(--basic-height);
+  height: 100%;
+  overflow-y: scroll;
+}
+#order .menuCategory {
+  padding: 10px 15px 15px;
+}
+#order .menuCategory ul {
+  display: flex;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+#order .menuCategory ul li a {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 0.9em;
+  white-space: nowrap;
+  margin-right: 10px;
+  font-weight: 500;
+  color: #525252;
+}
+
+#order .menuCategory ul li.active a {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+#order .prdLayout {
+  display: flex;
+  justify-content: space-between;
+}
+
+#order .colCount {
+  cursor: pointer;
+}
+
+#order .prdList {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#order .prdList tr td a img {
+  border: 1px solid var(--basic-bg-color);
+  border-radius: 100%;
+  width: 70%;
+}
+
+#order .prdList tr td {
+  width: 33.333%;
+  padding-bottom: 15px;
+}
+
+#order .prdList.line_1 a {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 0 20px;
+}
+
+#order .prdList.line_1 a img {
+  width: 25%;
+}
+
+#order .prdList.line_1 .prdInfo {
+  padding-left: 5%;
+}
+
+#order .prdList .prdInfo {
+  line-height: 2em;
+}
+
+#order .prdList .prdPrice {
+  font-weight: 900;
+}
+
+#order .menuFooter {
+  background-color: #000;
+}
+#order .menuFooter button {
+  color:#fff;
+  font-size: var(--main-font-size);
+}
+
+#order .menuFooter button.cartBtn {
+  font-size:1.5em;
+}
+
+#order #storeChangePop {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.5);
+  z-index:51;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+#order #storeChangePop .storeChangeBox {
+  width:70%;
+  padding-top:8%;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#storeChangePop .storeChangeBox strong{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#storeChangePop .storeChangeBox p{
+  margin: 15px 0 25px;
+  padding: 0 15px;
+  word-break: keep-all;
+  line-height: 1.5em;
+}
+
+#storeChangePop .storeChangeBox button{
+  display:block;
+  float: left;
+  width: 50%;
+  height:40px;
+  font-weight: bold;
+  font-size: var(--basic-font-size);
+}
+
+#storeChangePop .storeChangeBox .changeCancel{
+  background-color: var(--main-color2);
+  color:var(--main-color1);
+}
+
+#storeChangePop .storeChangeBox .changeOk{
+  background-color: var(--main-color1);
+  color:var(--main-color2);
+}
+
+
+
+
+
+/* === orderStep_2 주문 - 옵션선택페이지 === */
+
+#order.orderStep_2 {
+  background-color: var(--basic-bg-color);
+  height: auto;
+}
+
+#order.orderStep_2 footer{
+  flex-direction: column;
+}
+
+#prdDetail {
+  text-align: center;
+}
+
+#prdDetail img {
+  width: 170px;
+}
+
+#prdDetail .prdName {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#prdDetail p {
+  padding: 10px 15px 30px;
+  word-break: keep-all;
+  font-size: 0.9em;
+}
+
+#order .cartBtn {
+  position: relative;
+  font-size:var(--icon-font-size);
+}
+
+.cartBtn .cartCount {
+  height: 12px;
+  padding: 0 3px;
+  background: red;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 100%;
+  font-size: 0.5em;
+  text-align: center;
+  line-height: 12px;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+}
+
+.optionBox {
+  padding: 15px;
+}
+
+.optionBox form label {
+  display: block;
+  margin: 20px 0;
+}
+
+.optionBox form h4 {
+  color: #676767;
+  margin-top: 20px;
+}
+
+.optionBox.recommendBox {
+  margin-bottom: 45px;
+}
+
+.optionBox .recoMenu h4 {
+  font-weight: bold;
+  color: #000;
+  margin-top: 0;
+}
+
+.optionBox .recoMenu img {
+  max-width: 150px;
+  width: 22%;
+}
+
+.optionBox .recoMenu label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.optionBox .recoMenu .recoInfo {
+  flex: 1;
+  padding-left: 10px;
+  line-height: 1.5em;
+  font-size: var(--basic-font-size);
+}
+
+.optionBox .recoMenu .recoInfo .recoPrice {
+  font-weight: bold;
+}
+
+.orderBottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0 10px;
+  font-size: var(--basic-font-size);
+  font-weight: bold;
+}
+
+.orderBottom b {
+  color:red;
+  font-weight: bold;
+}
+
+.orderBottom .prdCountBox {
+  display: flex;
+  align-items: center;
+}
+.orderBottom .prdCountBox .prdCount {
+  width: 30px;
+  text-align: center;
+  margin: 0;
+  border: none;
+  padding:0 0 5px;
+}
+
+.orderBottom .prdCountBox i {
+  font-size: 1.5em;
+}
+
+
+.orderMenu {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderMenu a {
+  height: 40px;
+  flex: auto;
+  margin: 0 5px;
+  border-radius: 5px;
+  line-height: 40px;
+  background-color: var(--main-color1);
+}
+
+.orderMenu .orderBtn {
+  background-color: var(--main-color2);
+  margin-left: 0;
+  color: var(--main-color1);
+  font-weight: bold;
+}
+
+.orderMenu .basketBtn {
+  margin-right: 0;
+  color: #fff;
+}
+
+/* ================= orderStep_3 결제하기 페이지 ====================== */
+.payment {
+  background-color: var(--basic-bg-color);
+}
+
+.payment .payWrap > div {
+ padding: 15px;
+}
+
+#storeName {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+}
+.payment #orderList {
+  display: none;
+}
+
+.payment #orderList.open {
+  display: block;
+}
+
+
+.payment #orderList > li{
+  display: flex;
+  align-items: center;
+  padding: 15px 0 5px;
+  font-size: var(--basic-font-size);
+}
+
+.payment #orderList li .prdImg {
+  flex:0 1 20%;
+}
+.payment #orderList li .basketPrd {
+  flex:0 1 80%;
+}
+
+.payment #orderList li .basketPrd .optionList {
+  margin:10px 0;
+  font-weight: 400;
+}
+
+.payment #orderList li .basketPrd .optionList li {
+  margin-bottom:8px;
+}
+
+.payment #orderList li .basketPrd .prdCountBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top:15px;
+}
+
+.payment h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.payment .orderContraction {
+  font-weight: 400;
+}
+
+.payment #orderList {
+  width: 100%;
+}
+
+.payment h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.payment h6 {
+  margin-bottom: 5px;
+}
+
+#storeRequest > input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 5px 0 25px;
+}
+
+.packagingRequest label {
+  display: block;
+  margin: 15px 0;
+}
+
+#sale > div {
+  margin-top: 10px;
+}
+
+.linkBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkBox i {
+  font-size: 1.5em;
+}
+
+#pay {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+#pay h5 {
+  width: 100%;
+}
+
+#pay label {
+  flex: 0 1 33.333%;
+  margin: 10px 0;
+}
+
+#cashReceipts {
+  display: flex;
+  flex-direction: column;
+}
+
+#cashReceipts label {
+  margin: 10px 0 5px;
+}
+
+input#saveCashReceipts {
+  display: none;
+}
+
+input#saveCashReceipts + label {
+  cursor: pointer;
+}
+
+input#saveCashReceipts + label:before {
+  content: "\e906";
+  font-family: "icomoon" !important;
+  font-size: 17px;
+  text-align: center;
+  color: #ccc;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
+input#saveCashReceipts:checked + label:before {
+  content: "\e906";
+  font-family: "icomoon" !important;
+  font-size: 17px;
+  text-align: center;
+  color: #000;
+}
+
+#totalOrder ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 15px;
+}
+
+#totalOrder .toggleBtn {
+  border-top: 1px solid #ccc;
+  padding: 15px 0 0 0;
+}
+
+#totalOrder ul li span {
+  font-weight: bold;
+}
+
+#totalOrder .resultPrice b {
+  font-size: 1.3em;
+  color: red;
+}
+
+#payBtn {
+  text-align: center;
+  background-color: var(--main-color1);
+  color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+/* ============= basket 장바구니 페이지 ===========*/
+
+.basket {
+  background-color: var(--basic-bg-color);
+}
+
+.basket > form + p {
+  text-align: center;
+  margin: 20px 0 -30px 0;
+  font-size: var(--basic-font-size);
+}
+
+.basket h4 {
+  padding: 15px;
+  font-weight: bold;
+}
+
+
+p.basketEmpty{
+    height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basketList > li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+  align-items: center;
+  position: relative;
+  margin:5px 15px 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 18px;
+  font-size: var(--basic-font-size);
+}
+
+.basketList > li:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.basketList li > div {
+  flex: 0 1 23%;
+}
+
+.basketList li .basketPrd {
+  flex: 0 2 75%;
+}
+
+.basketList li .basketPrd .prdName {
+  font-weight: bold;
+}
+
+.basketList li .basketPrd ul li {
+  margin-top: 5px;
+}
+
+.basketList li .delBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: var(--main-font-size);
+}
+
+.basketList li .delBtn i {
+  font-size: var(--main-font-size);
+  color: #bcbcbc;
+}
+
+.basketList li .prdCountBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.basketList li .prdCountBox .countBox {
+  display: flex;
+  align-items: center;
+}
+
+.basketList li .prdCountBox .countBox .prdCount {
+  width: 40px;
+  text-align: center;
+  font-size: var(--main-font-size);
+}
+
+.basketList li .prdCountBox .countBox button i {
+  font-size:1.8em
+}
+
+.basketList li .prdCountBox .prdPrice {
+  font-weight: bold;
+  font-size: var(--main-font-size);
+}
+.basketList > li.recoMenu {
+  align-items: center;
+}
+.basketList > li.recoMenu .prdName{
+  margin-bottom: 15px;
+}
+
+/* alarm 페이지 */
+
+.alarmWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+.noAlarm {
+  text-align: center;
+}
+.noAlarm img {
+  width: 50px;
+}
+.allreadBtn {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 3px 6px;
+  white-space: nowrap;
+  font-size: 0.75em;
+}
+
+/* stamp 페이지 */
+
+.stampInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.stampInfo button {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-size: var(--basic-font-size);
+}
+
+.stampInfo .stampCount {
+  font-weight: bold;
+  font-size: var(--main-font-size);
+}
+
+.stampInfo .stampCount span {
+  color: red;
+}
+
+.stampList {
+  width: 265px;
+  height: 167px;
+  margin: 0px auto 20px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  background-image: url(../resource/img/stamp_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stampList li {
+  flex: 0 1 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stampList li img {
+  width: 70%;
+}
+
+.noticeBox {
+  background-color: var(--basic-bg-color);
+  padding: 20px;
+}
+
+.noticeBox h6 {
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.noticeBox ul li {
+  font-size: var(--basic-font-size);
+  line-height: 1.8em;
+}
+
+/* storeChoice 페이지 */
+.storePop.off {
+  display: none;
+}
+.storePop {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.storePop .inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff;
+  padding-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.storePop .inner ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+.storePop .inner .storeName {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.storePop .inner .storeMap {
+  margin: 15px 0;
+}
+
+.storePop .inner p {
+  color: var(--tip-font-color);
+  background-color: var(--tip-bg-color);
+  margin-bottom: 20px;
+}
+
+.storePop .inner ul li {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+.storePop .inner ul li button {
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+.storePop .inner ul li button.cancelBtn {
+  color: var(--main-color1);
+  background-color: var(--main-color2);
+}
+
+.storePop .inner ul li button.orderBtn {
+  color: var(--main-color2);
+  background-color: var(--main-color1);
+}
+
+.subCategory ul {
+  display: flex;
+  padding: 15px 20px 5px;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  border-bottom: 1px solid #ddd;
+}
+
+.subCategory ul li {
+  margin-right: 25px;
+}
+
+.subCategory ul li.active a {
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.subCategory p {
+  padding: 20px;
+}
+
+.subCategory p span {
+  position: relative;
+}
+.subCategory p span:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.storeList .storeName {
+  font-weight: bold;
+}
+
+.storeList .storeAddress {
+  margin: 8px 0;
+  font-size: 0.85em;
+  letter-spacing: -0.5px;
+}
+
+.storeList .storeMap {
+  color: red;
+  font-weight: bold;
+}
+
+.storeImgBox {
+  position: relative;
+  padding: 5px;
+}
+
+.storeImgBox .favorite {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.9em;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+}
+
+.storeImgBox .favorite i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  color: #ccc;
+}
+
+.storeImgBox .favorite::after {
+  content: "";
+  display: inline-block;
+  width: 101%;
+  height: 101%;
+  position: absolute;
+  right: 2px;
+  bottom: 3px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.storeList {
+  width: 100%;
+}
+
+.storeList tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.storeList tr td .storeImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.storeList tr.off .storeInfo {
+  opacity: 0.5;
+}
+
+.storeList tr.off .storeImgBox:after {
+  content: "준비중";
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.8em;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+}
+
+/* storeSearch 페이지 */
+
+.searchBox {
+  margin: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.searchBox label {
+  width: 100%;
+}
+
+.searchBox i {
+  font-size: 15px;
+}
+.searchBox input {
+  width: calc(100% - 20px);
+  margin: 0;
+  border: none;
+  height: 30px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+/* prdSearch 페이지 */
+.prdSearch .prdList {
+  width: 100%;
+}
+/*
+.prdSearch .prdList tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+*/
+
+.prdSearch .prdList tr td.prdImgBox {
+  flex: 1;
+}
+.prdSearch .prdList tr td.prdInfo {
+  flex: 3;
+  text-align: left;
+  padding-left: 5%;
+  box-sizing: border-box;
+  line-height: 2em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.prdSearch .prdList tr td.prdInfo .prdPrice {
+  font-weight: bold;
+}
+
+.prdSearch .prdList tr td .prdImg {
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+/* 간편카드 페이지 */
+
+.cardReWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 100px);
+  padding: 20px;
+}
+.cardReWrap .noCard {
+  text-align: center;
+  font-weight: bold;
+}
+.cardReWrap .noCard img {
+  width: 50px;
+  margin-bottom: 5px;
+}
+
+.cardReWrap button {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20%;
+}
+
+/*간편카드등록 페이지 */
+
+#cardStep_1 {
+  padding: 50px 0 0;
+  background-color: var(--basic-bg-color);
+  height: 100%;
+}
+
+#cardStep_1 form > div {
+  padding: 9% 20px;
+}
+
+#cardStep_1 form > div h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#cardStep_1 form input:not([type="radio"]) {
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#cardStep_1 form #cardName label {
+  position: relative;
+}
+#cardStep_1 form #cardName label .countBox {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+#cardStep_1 form #cardName input {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+#cardStep_1 form #cardNumber .inputWarp {
+  display: flex;
+}
+
+#cardStep_1 form #cardNumber .inputWarp input {
+  width: 25%;
+}
+
+#cardStep_1 form #cardDate input {
+  width: 15%;
+  text-align: center;
+  margin: 0;
+}
+
+#cardStep_1 form #cardPassword input {
+  width: 10%;
+}
+#cardStep_1 form #cardPassword span {
+  display: inline-block;
+  width: 10%;
+  height: 38px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#cardStep_1 form #Card_Classification input[type="text"] {
+  width: 100%;
+  margin: 15px 0 50px;
+}
+
+#Card_Classification #classification_2 {
+  margin-left: 15px;
+}
+
+#cardRegistration {
+  background-color: #ccc;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+}
+
+/* 마이페이지 */
+
+#myPage {
+  padding: 20px;
+}
+
+#myPage > ul.accountMenu {
+  display: flex;
+}
+
+#myPage > ul.accountMenu li:first-child a {
+  padding: 0;
+  margin: 2px;
+  border: none;
+}
+
+#myPage .accountMenu li a {
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+#myPage .myName {
+  font-size: var(--main-font-size);
+  font-weight: bold;
+  margin-top: 10%;
+}
+#myPage h4 {
+  margin-top: 10%;
+  font-size: var(--basic-font-size);
+}
+#myPage > ul > li {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+#coupon {
+  padding: 50px 0;
+}
+
+/* join,login 페이지 */
+#loginStart {
+  height: 100%;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loginNjoin {
+  text-align: center;
+}
+.loginNjoin li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+
+.kakaoLogin {
+  display: inline-block;
+  width: 100%;
+  margin: 50% 0 8%;
+}
+
+#login {
+  height: 100%;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#login h1 {
+  width: 80%;
+  margin: 0 auto 10%;
+}
+
+#login label{
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border:1px solid var(--main-color2);
+  overflow: hidden;
+}
+
+#login label span{
+  position: absolute;
+  left: 15px;
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+#login input {
+  margin: 0;
+  width: 100%;
+  height:50px;
+  padding:0 25%;
+  border:none;
+}
+#login input[type="password"] {
+  font-size:1.8em;
+  padding-bottom: 5px;
+}
+
+#login .loginBtn {
+  width: 100%;
+  height:50px;
+  background-color: var(--main-color1);
+  color:#fff;
+  font-size: var(--main-font-size);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+
+
+/* loginBtn 끝*/
+/* Join 시작*/
+#join {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+#join table {
+  width: 100%;
+  margin: 15px 0;
+}
+
+#join .joinFirst {
+  margin-bottom: 8%;
+}
+
+#join .joinFirst li {
+  margin-bottom: 10px;
+}
+
+#join .phoneTitle {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#join .joinPhone td {
+  padding-bottom: 10px;
+}
+
+.agreeInputBox td {
+  padding-bottom: 15px;
+}
+
+.input1 {
+  position: relative;
+}
+
+.input1 input {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px 0 5px 0;
+  width: 100%;
+  height: 40px;
+  font-size: var(--basic-font-size);
+}
+
+.input1 span {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.sendBtn {
+  background-color: #d1d2d3;
+  border-radius: 0 5px 5px 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  font-size: var(--basic-font-size);
+}
+
+.joinBtn {
+  width: 100%;
+  background: #d1d2d3;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+#join .privacy {
+  padding-bottom: 15px;
+}
+
+#join .privacy > div {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#join .privacy > div span {
+  font-weight: bold;
+}
+
+#join .privacy ul li {
+  margin-top: 10px;
+  font-size: 0.8em;
+}

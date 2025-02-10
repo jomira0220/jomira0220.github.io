@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/commen.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+
+<body>
+
+  <div class="barcordBox off" id="popBox">
+    <div class="barcordInner">
+      <button id="popOffBtn" class="closeBtn" type="button"><span class="hidden">닫기</span><i
+          class="icon-cancel"></i></button>
+      <img class="logo" src="./resource/img/logo_brown.png" alt="로고">
+      <h3>멤버십 바코드</h3>
+      <img class="barcord" src="./resource/img/barcode_dummy.png" alt="">
+      <p><span class="tip">TIP</span> 흔들면 멤버십 바코드가 나와요!</p>
+    </div>
+  </div>
+
+  <div class="intro">
+    <img class="logo" src="./resource/img/logo_white.png" alt="">
+  </div>
+
+  <article id="main">
+
+    <header>
+      <ul class="mainGnb">
+        <li id="popOnBtn" class="barcode"><span class="hidden">바코드</span><i class="icon-barcode"></i></li>
+        <li class="alarm"><a href="./page/alarm.html"><span class="hidden">알림</span><i class="icon-bell"></i></a></li>
+      </ul>
+    </header>
+
+    <div class="swiper mainSlide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="video">
+            <div class="video-container">
+              <div id="player1" style="width:100%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="wrapBg">
+
+      <section class="info">
+        <div class="nameBox"><span class="name"></span>님</div>
+        <ul class="infoMenu">
+          <li><a href="./page/stamp.html"> <i class="icon-stamp"></i>스탬프<span class="stampCount">2</span></a>
+          </li>
+          <li><a href="./page/coupon.html"> <i class="icon-coupon"></i>쿠폰<span class="stampCount">2</span></a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="sub1SlideWarp">
+        <section class="swiper sub1Slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./resource/img/slide/sub1_slide/1.png" alt="">
+            </div>
+            <div class="swiper-slide"><img src="./resource/img/slide/sub1_slide/2.png" alt="">
+            </div>
+            <div class="swiper-slide"><img src="./resource/img/slide/sub1_slide/3.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </section>
+      </div>
+
+      <section class="swiper sugestionMenu">
+        <h3><span class="name"></span>님을 위한 추천 메뉴</h3>
+        <div class="swiper-wrapper">
+          <!--
+          <div class="swiper-slide"><a href=""><img src="./resource/img/menu/coffee/hot/CH-0001.jpg" alt="">
+              <div class="title">Slide 1</div>
+            </a>
+          </div>
+          -->
+        </div>
+      </section>
+    </div>
+
+    <section class="swiper sub2Slide">
+      <h3>새소식</h3>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./resource/img/slide/sub2_slide/1.png" alt=""></div>
+        <div class="swiper-slide"><img src="./resource/img/slide/sub2_slide/2.png" alt=""></div>
+        <div class="swiper-slide"><img src="./resource/img/slide/sub2_slide/1.png" alt=""></div>
+        <div class="swiper-slide"><img src="./resource/img/slide/sub2_slide/2.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+
+    <footer>
+      <ul class="footerMenu">
+        <li>
+          <a href="index.html">
+            <i class="icon-house-solid"></i>
+            <div>메인</div>
+          </a>
+        </li>
+        <li class="orderBtn">
+          <a href="./page/storeChoice.html">
+            <i class="icon-coffee"></i>
+            <div>메가주문</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="icon-list"></i>
+            <div>주문내역</div>
+          </a>
+        </li>
+        <li>
+          <a href="./page/myPage.html">
+            <i class="icon-user_solid"></i>
+            <div>마이페이지</div>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+  </article>
+
+  <script src="./js/main.js" type="module"></script>
+ 
+
+  <script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player1', {
+        width:'100%',
+        height:'100%',
+        videoId: '9VYx2IxjZPg', //유튭 영상ID
+        playerVars: {
+          'autoplay': 1, //자동재생
+          'modestbranding': 1,
+          'playsinline': 0,
+          'rel': 0,
+          'controls': 0,	//youtube 콘트롤 표시
+          'color': 'white',
+          'loop': 1, //반복 여부  
+          'playlist':'9VYx2IxjZPg',
+        },
+        events: {
+          'onReady': onPlayerReady,
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      player.playVideo();
+      player.mute(); //자동재생하려면 mute해야함
+    }
+  </script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var mainSlide = new Swiper(".mainSlide", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+    var sub1_Slide = new Swiper(".sub1Slide", {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+    });
+
+    var sub2_Slide = new Swiper(".sub2Slide", {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    });
+
+    var sugestionMenu = new Swiper(".sugestionMenu", {
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+
+</html>
